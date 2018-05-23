@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!-- IE: Force to always use the latest version - if chrome frame is installed use this instead -->
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<meta name="viewport" content="initial-scale=.8">
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta name="referrer" content="always" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<title>Bazzify — Design Studio</title>
+
+		<link rel="stylesheet" type="text/css" href="assets/images/icons/favicon.ico">
+
+		<!-- Meta description and keywords -->
+		<meta name="description" content="">
+		<meta name="keywords" content="visual identity, art direction, design, digital design, typography, digital products, digital experiences, creative direction" />
+
+		<!-- FB icons -->
+		<meta property="og:title" content="Bazzify — Design Studio">
+		<meta property="og:site_name" content="Bazzify.ir">
+		<meta property="og:url" content="index.html" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="images/social.png">
+		<meta property="og:description" content="">
+
+		<!-- for Twitter -->
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@Bazzifystudio">
+
+		<meta name="twitter:title" content="Bazzify — Design Studio" />
+		<meta name="twitter:description" content="We are the Gamification" />
+		<meta name="twitter:image" content="images/social.png" />
+
+		<!-- CSS -->
+		<link rel='stylesheet' id='media-css'  href='css/mediagif.css' type='text/css' media='all' />
+ 		<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--		<link rel="stylesheet" type="text/css" href="assets/css/lists.css">
+ -->
+
+	</head>
+
+	<body>
+		<!-- Outsider Lib -->
+		<!--<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>-->
+		<script src="js/lib/greensock/TweenMax_min.js"></script>
+
+		<!-- Tools n Utils -->
+		<script src="js/lib/setsnail/system/BrowserDetect_min.js"></script>
+		<script src="js/lib/setsnail/debug/Debug_min.js"></script>
+		<script src="js/lib/setsnail/animation/AnimationUtils_min.js"></script>
+		<script src="js/lib/setsnail/utils/Trace_min.js"></script>
+		<script src="js/lib/setsnail/utils/EventDispatcher_min.js"></script>
+		<script src="js/lib/setsnail/utils/ColorUtils_min.js"></script>
+		<script src="js/lib/setsnail/utils/CSS_min.js"></script>
+		<script src="js/lib/setsnail/utils/Snail_min.js"></script>
+		<script src="js/lib/setsnail/utils/ArrayUtils_min.js"></script>
+		<script src="js/lib/setsnail/utils/RenderEngine_min.js"></script>
+		<script src="js/lib/setsnail/utils/StringUtils_min.js"></script>
+		<script src="js/lib/setsnail/utils/instafeed.min.js"></script>
+		<script src="js/lib/setsnail/utils/MapUtils_min.js"></script>
+		<script src="js/lib/setsnail/share/ShareUtils_min.js"></script>
+		<script src="js/lib/setsnail/search/SearchManager_min.js"></script>
+		<script src="js/lib/setsnail/text/Text_min.js"></script>
+		<script src="js/lib/setsnail/prototype/array/sortOn_min.js"></script>
+
+		<!-- TouchLib -->
+		<script src="js/lib/setsnail/touch/Touchable_min.js"></script>
+		<script src="js/lib/setsnail/touch/TouchDragger_min.js"></script>
+
+		<script src="js/lib/setsnail/touch/utils/DragGroup_min.js"></script>
+		<script src="js/lib/setsnail/touch/utils/DragInfo_min.js"></script>
+		<script src="js/lib/setsnail/touch/utils/GroupDragger_min.js"></script>
+		<script src="js/lib/setsnail/touch/utils/TouchInfo_min.js"></script>
+		<script src="js/lib/setsnail/touch/utils/EaseInfo_min.js"></script>
+
+		<script src="js/lib/setsnail/touch/plugins/DraggerPlugin_min.js"></script>
+		<script src="js/lib/setsnail/touch/plugins/DraggerEasePlugin_min.js"></script>
+		<script src="js/lib/setsnail/touch/plugins/DragBasic_min.js"></script>
+		<script src="js/lib/setsnail/touch/plugins/DragBounds_min.js"></script>
+		<script src="js/lib/setsnail/touch/plugins/DragEase_min.js"></script>
+
+		<script src="js/lib/setsnail/utils/Rectangle_min.js"></script>
+		<script src="js/lib/setsnail/utils/MathUtils_min.js"></script>
+
+		<!-- ResizeManager -->
+		<script src="js/lib/setsnail/resize/ResizeManager_min.js"></script>
+		<script src="js/lib/setsnail/resize/ResizeManagerSettings_min.js"></script>
+		<script src="js/lib/setsnail/resize/ResizeEvents_min.js"></script>
+
+		<script src="js/lib/setsnail/video/VideoPlayer_min.js"></script>
+
+		<!-- RetinaHandler -->
+		<script src="js/lib/setsnail/image/RetinaImage_min.js"></script>
+		<script src="js/lib/setsnail/retina/RetinaHandle_min.js"></script>
+		<script src="js/lib/setsnail/retina/RetinaHandleEvents_min.js"></script>
+
+		<!-- ContentManager -->
+		<script src="js/lib/setsnail/contentManager/ContentManager_min.js"></script>
+		<script src="js/lib/setsnail/contentManager/TemplateData_min.js"></script>
+
+		<!--
+		END SnailLib
+		-->
+
+		<!-- Src -->
+		<script src="js/src/Main_min.js"></script>
+		<script src="js/src/setsnail/Config_min.js"></script>
+		<script src="js/src/setsnail/Assets_min.js"></script>
+		<script src="js/src/setsnail/ui/UIColors_min.js"></script>
+		<script src="js/src/setsnail/utils/GuideLines_min.js"></script>
+		<!--<script src="js/src/setsnail/utils/LinedCircle.js"></script>-->
+		<!--<script src="js/src/setsnail/utils/RoundCircleGroup.js"></script>-->
+		<!--<script src="js/src/setsnail/utils/GroupedCircles.js"></script>-->
+		<script src="js/src/setsnail/utils/ScrollController_min.js"></script>
+		<script src="js/src/setsnail/utils/ImageSlider_min.js"></script>
+
+		<!--LINES-->
+		<script src="js/src/setsnail/utils/Lines/PsychedelicLines_min.js"></script>
+		<script src="js/src/setsnail/utils/Lines/LineMaskDrawer_min.js"></script>
+		<script src="js/src/setsnail/utils/Lines/LineMaskShape_min.js"></script>
+		<script src="js/src/setsnail/utils/Lines/CirclesOnALines_min.js"></script>
+
+		<script src="js/src/setsnail/ui/buttons/TextButton_min.js"></script>
+		<script src="js/src/setsnail/ui/text/TextArea_min.js"></script>
+
+		<!-- Templates -->
+		<script src="js/src/setsnail/templates/PageTemplate_min.js"></script>
+		<script src="js/src/setsnail/templates/TemplateHome_min.js"></script>
+		<script src="js/src/setsnail/templates/TemplateCase_min.js"></script>
+		<script src="js/src/setsnail/templates/TemplateCasesOverview_min.js"></script>
+		<script src="js/src/setsnail/templates/TemplatePrincip_min.js"></script>
+		<script src="js/src/setsnail/templates/TemplateProfil_min.js"></script>
+
+
+		<!-- Modules -->
+		<script src="js/src/setsnail/ui/modules/Module_min.js"></script>
+		<script src="js/src/setsnail/ui/modules/WhiteSpaceModule_min.js"></script>
+		<script src="js/src/setsnail/ui/modules/ReturnModule_min.js"></script>
+		<script src="js/src/setsnail/ui/modules/BasicHomeModule_min.js"></script>
+
+        <script src="js/src/setsnail/ui/modules/home/HomeStoryModule_min.js"></script>
+
+		<script src="js/src/setsnail/ui/modules/case/CaseOverviewModule_min.js"></script>
+		<script src="js/src/setsnail/ui/modules/case/CaseHomeModule_min.js"></script>
+		<script src="js/src/setsnail/ui/modules/case/CaseImageModule_min.js"></script>
+		<script src="js/src/setsnail/ui/modules/case/CaseVideoModule_min.js"></script>
+		<script src="js/src/setsnail/ui/modules/case/CaseTextModule_min.js"></script>
+
+        <script src="js/src/setsnail/ui/modules/casesoverview/OverviewCaseModule_min.js"></script>
+
+        <script src="js/src/setsnail/ui/modules/principles/PrincipleSectionModule_min.js"></script>
+
+		<!--<script src="js/src/setsnail/ui/modules/profile/ProfileEmployeeModule_min.js"></script>-->
+		<script src="js/src/setsnail/ui/modules/profile/ProfileEmployeeModuleTwo_min.js"></script>
+		<script src="js/src/setsnail/ui/modules/profile/ProfileInfoModule_min.js"></script>
+		<script src="js/src/setsnail/ui/modules/profile/ProfileEmployee_min.js"></script>
+
+        <!-- Components -->
+        <script src="js/src/setsnail/ui/components/Footer_min.js"></script>
+        <script src="js/src/setsnail/ui/components/HomeStory_min.js"></script>
+		<script src="js/src/setsnail/ui/components/CasesInfoBox_min.js"></script>
+
+
+		<!-- Menu -->
+		<script src="js/src/setsnail/ui/menu/MainMenu_min.js"></script>
+		<script src="js/src/setsnail/ui/menu/MenuBorder_min.js"></script>
+		<script src="js/src/setsnail/ui/menu/MenuBorderLines_min.js"></script>
+		<script src="js/src/setsnail/ui/menu/MenuLogo_min.js"></script>
+
+		<script src="js/src/setsnail/ui/menu/MenuContent_min.js"></script>
+		<script src="js/src/setsnail/ui/menu/MenuContactInfo_min.js"></script>
+		<script src="js/src/setsnail/ui/menu/MenuFooter_min.js"></script>
+		<script src="js/src/setsnail/ui/menu/MenuSelector_min.js"></script>
+		<script src="js/src/setsnail/ui/menu/MenuSocial_min.js"></script>
+
+		
+
+		
+		<div style='display: none;' id='content'>
+
+			<div data-name="general-data">
+
+				<div data-name="menu">
+
+					<div data-name="contact">
+
+						<div data-name="headline">تماس با ما</div>
+
+						<div data-name="columns">
+							<div data-name="column">
+								ایران - تهران<br>
+								
+							</div>
+							<div data-name="column">
+								+98 21 77 70 88 99<br>
+                                                                +98 912 270 90 40<br>
+								<a href="mailto:hi@Bazzify.ir?Subject=Hi%20Bazzify" target="_top">hi@Bazzify.ir</a>
+
+							</div>
+							<div data-name="column">
+								میخواید بیشتر بدونید؟<br>
+								یا اگر سئوالی دارید<br>
+                                                                منتظر شنیدن صداتون هستیم<br>
+							</div>
+						</div>
+					</div>
+
+					<div data-name="footer">
+						<div data-name="copyright" >©کپی رایت - بازیفای</div>
+						<div data-name="cvr" ></div>
+					</div>
+
+					<div data-name="social">
+						<div data-name="instagram" data-link="https://www.instagram.com/Bazzify/">اینستاگرام</div>
+						<div data-name="twitter" data-link="https://twitter.com/Bazzify/">توئیتر</div>
+					</div>
+				</div>
+
+				<div data-name="pagefooter">
+					<div data-name="email"><a href="mailto:hi@Bazzify.ir?Subject=Hi%20Bazzify" target="_top">hi@Bazzify.ir</a></div>
+					<div data-name="phone">+98 21 77 70 88 99</div>
+				</div>
+
+			</div>
+
+			<div data-name="pages">
+
+				<div data-path='home' data-template="home">
+					<!--<div data-name="menu">Home</div>-->
+
+					<div data-name="frontpage">
+						<div data-name="founded">
+						</div>
+
+						<div data-name="link" data-link="projects">پروژه</div>
+
+						<div data-name="body">
+							کلید این<br>
+							معما<br>
+							!پیش اوست <br>
+						!حاکم درون را پیدا کن
+						</div>
+					</div>
+
+
+					<div data-name="stories">
+                                            <div data-name="story">
+							<div data-name="date">April 27 — 2018</div>
+
+							<div data-name="headline">
+								گیمیفیکیشن چیست؟<br>
+							</div>
+
+							<div data-name="body">بازی انگاری یا گیمیفیکیشن طراحی فرآیندی بر اساس کشش ها و انگیزه های درونی انسان است که طی آن کاربر
+                                                            به هر نتیجه ای که برسد یکی از گزینه های در نظر
+                                                            گرفته شده توسط طراح خواهد بود</div>
+
+							<div data-name="image-tag-name">بلاگ</div>
+
+							<div data-name="images">
+								<div data-name="image">images/assets/game.jpg</div>
+							</div>
+						</div>
+
+						<div data-name="story">
+							<div data-name="date">April 27 — 2018</div>
+
+							<div data-name="headline">
+								هنر آشفتگی<br>
+							</div>
+
+							<div data-name="body">این اثر را در پروژه های بازیفای ببینید. استفاده از نور و سایه ها برای خلق یک اثر هنری</div>
+
+							<div data-name="image-tag-name">پروژه</div>
+
+							<div data-name="images">
+								<div data-name="image">images/assets/art_of_anarchism.jpg</div>
+							</div>
+						</div>
+                                            
+                                            	<div data-name="story">
+							<div data-name="date">April 27 — 2018</div>
+
+							<div data-name="headline">
+								هنر هماهنگی<br>
+							</div>
+
+							<div data-name="body">در این پروژه با استفاده از یک منبع نور و تعدادی استوانه چوبی اثر خلاقانه ای ایجاد شد. در پروژه ها توضیحات کامل آنرا بخوانید</div>
+
+							<div data-name="image-tag-name">پروژه</div>
+
+							<div data-name="images">
+								<div data-name="image">images/assets/danad_wood_pencil.jpg</div>
+							</div>
+						</div>
+
+						
+					</div>
+
+
+				</div>
+
+
+				<div data-path='studio' data-template="profile">
+					<div data-name="menu">استـودیو</div>
+                                        
+						
+
+
+					<div data-name="frontpage">
+						<div data-name="founded">
+							استودیو بازیفای توسط رضا ترابخانی محقق گیمیفیکیشن و بازی‌انگاری در سال 1396 برای ایجاد فضای آموزشی و اجرایی در حوزه مطالعات رفتارشناسی، بازی‌انگاری و طراحی تجربه‌های ناب کاربری ایجاد شد
+						</div>
+
+						<div data-name="story">
+							 
+							<br>
+							 
+							<br><br>
+							 
+						</div>
+
+						<div data-name="body">
+							بازیفای مجموعه‌ای از جوانان خلاق، متخصص و باتجربه است که تحت حمایت اساتید و پیشکسوتان صنعت، تجارت و دانشگاه، رفتارشناسی، زیبایی‌شناسی و اصول مدیریت مدرن کسب و کار را ادغام کرده و نتیجه‌ای بی‌نظیر ایجاد کرده است
+						</div>
+					</div>
+
+					<div data-name="employees">
+
+						<div data-name="employee">
+							<div data-name="info">
+								<div data-name="name">رضا تراب‌خانی</div>
+								<div data-name="title">موسس و<br>مدیر خلاقیت</div>
+								<div data-name="phone">+98 912 270 90 40</div>
+								<div data-name="social">
+									<div data-name="instagram" data-link="https://www.instagram.com/Bazzify/">اینستاگرام</div>
+									<div data-name="twitter" data-link="https://twitter.com/Bazzify/">توئیتر</div>
+								</div>
+
+	
+							</div>
+						</div>
+
+						<div data-name="image">assets/images/profile_both.jpg</div>
+
+					</div>
+
+					<div data-name="service">
+						<div data-name="headline">خدمات ما</div>
+						<div data-name="body">به کسب‌و‌کارها کمک می‌کند تا با ایجاد مفهومی خاص، شگفت‌انگیز و خارق‌العاده، تحت اصول زیبایی‌شناسی و رفتارشناسی اقدام به تحریک کشش‌ها و انگیزه‌های درونی مشتریان‌شان کنند. با خدمات ما مشتریان شما هیچ انتخابی جز جذب شدن به محصول و یا خدمات کسب‌و‌کار شما نخواهند داشت</div>
+
+						<div data-name="circles" data-type="round">
+							<div data-name="circle">خدمات ما</div>
+							<div data-name="circle">مشاوره سازمانی<br>و مدیریتی</div>
+							<div data-name="circle">سمینار و کارگاه آموزشی</div>
+							<div data-name="circle">بازی‌انگاری</div>
+							<div data-name="circle">خلاقیت<br>و طراحی تجربه ناب کاربری</div>
+						</div>
+
+					</div>
+
+					<div data-name="process">
+						<div data-name="headline">روند</div>
+						<div data-name="body">رویکرد ما به پروژه‌ها از این 4 مرحله پایه‌ای پیروی می‌کند، هر فاز به دقت و متناسب با پروژه پردازش می‌شود. در قلب هر مرحله اما همیشه نگاه شفافی وجود دارد که خروجی موفقیت آمیز نهایی را تضمین می‌کند و آن نگاه با تخصص و تجربه است.</div>
+
+						<div data-name="circles" data-type="straight">
+							<div data-name="circle">مفهوم اولیه</div>
+							<div data-name="circle">اجرا</div>
+							<div data-name="circle">بنیاد</div>
+							<div data-name="circle">طراحی</div>
+						</div>
+
+					</div>
+
+				</div>
+
+
+				<div data-path='principles' data-template="principles">
+					<div data-name="menu">قواعد</div>
+
+					<div data-name="frontpage">
+						<div data-name="founded">
+							استودیو بازیفای توسط رضا تراب‌خانی محقق گیمیفیکیشن و بازی‌انگاری در سال 1396 برای ایجاد فضای آموزشی و اجرایی در حوزه مطالعات رفتارشناسی، بازی‌انگاری و طراحی تجربه‌های ناب کاربری ایجاد شد
+						</div>
+
+						<div data-name="body">در بازیفای ما پنج قاعده کلی داریم که چارچوب اصلی ما را مشخص می‌کنند. این پنج قاعده ما را به انجام کاری مایل می‌کنند که همیشه به آن باور داشته‌ایم. این چارچوب ستاره قطبی ما برای رسیدن به بهترین نتایج و خلاقانه ترین پروژه‌ها است </div>
+					</div>
+
+					<div data-name="sections">
+						<div data-name="section">
+							<div data-name="headline">قصد</div>
+							<div data-name="body">
+تمام اعتبار کار ما بر اساس دو سئوال بنا شده است
+چرا اینجا هستیم و چرا وجود داریم؟ به محض پاسخ به این سئوال کار ما شروع می‌شود </div>
+							<div data-name="image">roundrect</div>
+						</div>
+
+						<div data-name="section">
+							<div data-name="headline">نوآوری</div>
+							<div data-name="body">اکتشاف در مفاهیم، پایه ای برای یک نتیجه معتبر ایجاد می‌کند که کسب‌و‌کار شما و آنچه را برای آن تعریف کرده‌اید، تقویت می‌کند. این ما را به فرایندی نوآورانه هدایت می‌کند که در آن فعالیت‌های شما در کسب و کارتان به ایجاد ارزشی فوق‌العاده منتهی میشود </div>
+							<div data-name="image">doubletriangle</div>
+						</div>
+
+						<div data-name="section">
+							<div data-name="headline">همکاری</div>
+							<div data-name="body">خروجی کار ما بر ماهیت همکاری تعریف شده است. مستقل از مجموعه مهارت‌ها و عملکرد ما، در کنار شما می‌توانیم به هسته چالش برسیم و راه را برای درگیری‌تان با چیزهایی که نباید، خواهیم بست. ما معتقدیم که با ایجاد یک رابطه قوی با مشتریان، نتایج بهتری ایجاد می‌کنیم </div>
+							<div data-name="image">rectbyrect</div>
+						</div>
+
+						<div data-name="section">
+							<div data-name="headline">اکتشاف</div>
+							<div data-name="body">روند همکاری فرصتی را برای کشف راه‌حل‌های بدیع و جایگزین ارائه می‌دهد که شما را  شگفت زده می‌کند - حس قوی برای ایجاد یک نتیجه‌ای فوق‌العاده تنها با صرف زمان برای اکتشاف این راه‌حل ها ممکن خواهد بود - به همین خاطر ما باور داریم که شما تا انتهای راه‌تان با ما خواهید بود </div>
+							<div data-name="image">triangle</div>
+						</div>
+
+						<div data-name="section">
+							<div data-name="headline">تا آخرین قدم</div>
+							<div data-name="body">ما همیشه تلاش می کنیم تا کارمان بی پایان باشد - ما اطمینان حاصل می‌کنیم که تمام جزئیات به بهترین نحو از راه تلاش و تفکر عمیق ایجاد شده باشند. نتیجه تلاش‌های ما سطحی از زیبایی‌شناسی را نشان می‌دهد که در نگاه مخاطب زلال و شگفت‌انگیز است</div>
+							<div data-name="image">rect</div>
+						</div>
+
+					</div>
+
+
+				</div>
+
+
+				<div data-path='projects' data-template="projects-0">
+					<div data-name="menu">پروژه</div>
+
+					<div data-path='ikeaplace' data-template="case-0" >
+						<div data-name="info">
+							<div data-name="headline">
+								IKEA Place</br>
+								Digital Product
+							</div>
+							<div data-name="client">IKEA/SPACE10</div>
+							<div data-name="project">Digital Product</div>
+							<div data-name="year">2017</div>
+						</div>
+
+						<div data-name="overviewimage">assets/images/cases/ikeaplace/Ikea_place.jpg</div>
+
+						<div data-name="home">
+							<div data-name="headline">IKEA Place</div>
+
+							<div data-name="details">
+								Concept<br>
+								Creative Direction<br>
+								User Experience Design<br>
+								Design Direction<br>
+								Visual Design<br>
+								Iconography<br>
+								Animation<br><br>
+								Credits: SPACE10, TWNKLS, Plan8, Set Snail, IKEA.
+							</div>
+
+							<div data-name="body">
+								IKEA Place lets people confidently experience, experiment and share how good design transforms any space. Using Apple’s newly released ARKit people can now place 3D objects in their own homes.
+							</div>
+						</div>
+
+						<div data-name="modules">
+							<div data-name="moduleVideo" width="854" height="480">
+								<div data-name="mode">MANUEL</div> /* MANUEL, AUTOPLAY, AUTOPLAY_ON_SCREEN */
+								<div data-name="coverImage">assets/images/cases/ikeaplace/Ikea_place.jpg</div>
+								<div data-name="source">assets/videos/ikea-place.mp4</div>
+							</div>
+							<!--<div data-name="moduleImage" width="3198" height="1800">assets/images/cases/ikeaplace/Ikea_place.jpg</div>-->
+							<div data-name="moduleText">
+								<!--<div data-name="top"></div>-->
+								<div data-name="mid">
+									Objective<br>
+									The idea of placing virtual objects in the real world has been around for sometime but the technology has never really been good enough. With the launch of Apple’s newly relased ARKit we we’re asked to conceptualize, art direct and design the AR app of IKEA.
+
+									<br><br>
+									Concept<br>
+									Allowing the many people to virtually place furniture in the own homes will help them unleash their imagination of home furnishing. While at the same time enabling IKEA to “open” millions of new showrooms globally trough people’s smartphones. The power of the smartphone and argumented reality brings IKEA closer to the people and people closer to IKEA.</div>
+								<div data-name="bot">
+									Design<br>
+									Our approach of the design has been to create an interface that feels as natural and intuitive as possible. IKEA is after all for the many. Aesthetically we’ve focused on bringing the IKEA brand to life trough small details while making sure the core experience is so simple, almost invisible —allowing people to focus on unleashing their imagination.
+								</div>
+							</div>
+							<div data-name="moduleImage" width="3188" height="1800">assets/images/cases/ikeaplace/Ikea_place_app_UI_01.png</div>
+							<div data-name="moduleImage" width="1118" height="1800">assets/images/cases/ikeaplace/UI_Animation_01.gif</div>
+							<div data-name="moduleImage" width="3870" height="1800">assets/images/cases/ikeaplace/Ikea_place_app_UI_02.png</div>
+							<div data-name="moduleText" data-width-scale="0.6" >
+								<div data-name="top">For most people, IKEA Place will be their first interaction with AR.
+									</br></br>
+									When designing the app our focus has been to design a natural and familiar interface using traditional UI elements and conversational interaces in context of the camera.
+									</br></br>
+									In this way people will know what to expect and feel confident when placing their first virtual object in real-life.</div>
+								<div data-name="bot"><a href="https://itunes.apple.com/us/app/ikea-place/id1279244498?mt=8" target="blank">Download the app</a></div>
+							</div>
+							<div data-name="moduleImage" width="3200" height="1800">assets/images/cases/ikeaplace/Ikea_place_03.jpg</div>
+							<div data-name="moduleImage" width="5549" height="1800">assets/images/cases/ikeaplace/Ikea_place_app_04.png</div>
+							<div data-name="moduleText" data-width-scale="0.6" >
+								<div data-name="top">Experiencing furniture trough AR is the currently the closest we can get to experiencing it in real-life. The app enables people to not only view furniture from one angle – it allows you to walk around it, see it from above and below. You can even explore the details of the materials by walking close to the furniture.</div>
+
+							</div>
+							<div data-name="moduleImage" width="3198" height="1800">assets/images/cases/ikeaplace/Ikea_place_app_05.jpg</div>
+							<div data-name="moduleText" data-width-scale="0.6" >
+								<div data-name="top">The design is centered around the experience of the camera and the furniture people place within. Dynamically the design system adapts to multiple devices and sizes — allowing everyone in the world with an iPhone 6s and up to use the app.</div>
+								<div data-name="bot"></div>
+							</div>
+							<div data-name="moduleImage" width="8082" height="1800">assets/images/cases/ikeaplace/Ikea_place_app_06.jpg</div>
+
+
+							<!-- </div> -->
+
+						</div>
+					</div>
+
+
+
+
+					<div data-path='space10' data-template="case-0" >
+						<div data-name="info">
+							<div data-name="headline">
+								SPACE10.io<br>
+								Digital Platform
+							</div>
+							<div data-name="client">SPACE10</div>
+							<div data-name="project">Digital Platform</div>
+							<div data-name="year">2017</div>
+						</div>
+
+						<div data-name="overviewimage">assets/images/cases/space10/space10_00_overview.jpg</div>
+
+						<div data-name="home">
+							<div data-name="headline">SPACE10.io</div>
+
+							<div data-name="details">
+								Concept<br>
+								User Experience<br>
+								Design Direction<br>
+								Digital Design<br>
+								Iconography<br>
+							</div>
+
+							<div data-name="body">
+								The purpose of SPACE10 is 
+to enable a better, more meaningful and sustainable life for the many people. We are on a mission to explore and design new ways of living.
+							</div>
+						</div>
+
+						<div data-name="modules">
+							<div data-name="moduleImage" width="2796" height="1800">assets/images/cases/space10/space10_01.jpg</div>
+							<div data-name="moduleText">
+								<!--<div data-name="top"></div>-->
+								<div data-name="mid">
+									Objective<br>
+									Redefine the space10.io framework with a modular approach making it easy to update and maintain while providing users with an ever changing playful experience of content, user interaction and community engagement.
+
+									<br><br>
+									Concept<br>
+									Our strategy was to bulid a design system that was based on the idea of spaces. Spaces meaning a free area of expanse which consists of width (X), height (Y) and depth (Z). Spaces are in a sense another word for using modules but spaces allows for a more felixible system. This strategy left us with the challenge to explore and define what digital spaces are, how they relate, connect, animate and behave.
+
+									This strategy left us with the challenge to explore and define what digital spaces are, how they relate, connect, animate and behave.</div>
+								<div data-name="bot">
+									Result<br>
+									The design direction is inspired by swiss graphic design from the 1960’s where the focus was to create a strong system of typography, colors and compositions. Given that there is a vast amount of content the approach of the style is to define an editorial and timeless aesthetics with room for details using both layout, functionality and animation.
+								</div>
+							</div>
+							<div data-name="moduleImage" width="3000" height="1800">assets/images/cases/space10/space10_02.jpg</div>
+							<div data-name="moduleText" data-width-scale="0.6" >
+								<div data-name="top">Conceptually and visually the spaces works with 3 dimensions width (X), height (Y) and depth (Z). Depth is used by layering the spaces on top of each-other. These layers all have a functionality.</div>
+								<div data-name="bot"><a href="http://www.space10.io/" target="blank">space10.io</a></div>
+							</div>
+							<div data-name="moduleImage" width="2792" height="1800">assets/images/cases/space10/space10_03.gif</div>
+							<div data-name="moduleText" data-width-scale="0.6" >
+								<div data-name="top">Helvetica Neue is used in 5 different weights to form a solid hierarchy and relation between the written and visual content. Weights used: Light, Regular, Medium, Bold & Bold outline.</div>
+								<div data-name="bot"><a href="http://www.space10.io/" target="blank">space10.io</a></div>
+							</div>
+
+							<div data-name="moduleImage" width="4982" height="1800">assets/images/cases/space10/space10_04.png</div>
+							<div data-name="moduleText" data-width-scale="0.6" >
+								<div data-name="top">Combining the grid, typography, colors and iconography gives us the base design, in a sense these are our “spaces” that can be used to build the entire platform.</div>
+								<div data-name="bot"><a href="http://www.space10.io/" target="blank">space10.io</a></div>
+							</div>
+							<div data-name="moduleImage" width="2800" height="1800">assets/images/cases/space10/space10_05.gif</div>
+							<div data-name="moduleText" data-width-scale="0.6" >
+								<div data-name="top">The design direction is inspired by swiss graphic design from the 1960’s where the focus was to create a strong system of typography, colors and compositions. Given that there is a vast amount of content the approach of the style is to define an editorial and timeless aesthetics with room for details using both layout, functionality and animation. All in all the design direction's most important function is to facilitate the content.</div>
+								<div data-name="bot"></div>
+							</div>
+							<div data-name="moduleImage" width="5814" height="1800">assets/images/cases/space10/space10_07.jpg</div>
+							<div data-name="moduleText" data-width-scale="0.6" >
+								<div data-name="top">The discover page of SPACE10.io gathers multiple content from the different areas of the platform.</div>
+								<div data-name="bot"></div>
+							</div>
+							<div data-name="moduleImage" width="2800" height="1800">assets/images/cases/space10/space10_08.jpg</div>
+							<div data-name="moduleText" data-width-scale="0.6" >
+								<div data-name="top">The platform has been designed for screen-sizes making sure the user gets a unified experience across devices and platforms and at the same time gives a vast flexibility for creating unique pages.</div>
+								<div data-name="bot"></div>
+							</div>
+							<div data-name="moduleImage" width="3626" height="1800">assets/images/cases/space10/space10_09.jpg</div>
+							<div data-name="moduleText" data-width-scale="0.6" >
+								<div data-name="top">The sum of all the spaces and elements marks a dynamic and timeless design system that can be used to build new pages in the future.</div>
+								<div data-name="bot"></div>
+							</div>
+							<div data-name="moduleImage" width="4876" height="1800">assets/images/cases/space10/space10_10.jpg</div>
+
+							<!-- </div> -->
+
+						</div>
+					</div>
+
+
+
+
+
+					<div data-path='setio' data-template="case-0" >
+						<div data-name="info">
+							<div data-name="headline">
+								Setio®<br>
+								Brand Identity
+							</div>
+							<div data-name="client">Setio®</div>
+							<div data-name="project">Brand Identity</div>
+							<div data-name="year">2016</div>
+						</div>
+
+						<div data-name="overviewimage">assets/images/cases/setio/setio_00_overview.jpg</div>
+
+						<div data-name="home">
+							<div data-name="headline">Setio®</div>
+
+							<div data-name="details">
+								Brand Strategy & Platform<br>
+								Brand Naming<br>
+								Brand Signature<br>
+								Typographic System<br>
+								Colorpalette<br>
+								iOS App Design<br>
+								Photography<br>
+								Iconography<br>
+								Illustration<br>
+								Packaging<br>
+								Brand Identity Guidelines<br>
+							</div>
+
+							<div data-name="body">
+								Empowering runners with tailor made advices and precision metrics is at the heart of what Setio® does. Bridging data, expert knowledge, technology and connecting runners to a global network of dedicated professionals will make runners become runners in control.
+							</div>
+						</div>
+
+						<div data-name="modules">
+							<div data-name="moduleImage" width="2511" height="1620">assets/images/cases/setio/setio_01.jpg</div>
+							<div data-name="moduleText">
+								<!--<div data-name="top"></div>-->
+								<div data-name="mid">
+									Objective<br>
+									Explore, develop and define a brand vision for a new running brand providing a learning experience for runners to gain control and obtain a new and better running behaviour.
+									<br><br>
+									Concept<br>
+									The Setio® identity is build from the concept of "Control". Becoming a runner in control of mind and feet is a process of progress. The first step to becoming a runner in control is to acknowledge that you can become better and enter a zone of progress. Once you start to progress you get closer and closer to control.</div>
+								<div data-name="bot">
+									Design<br>
+									The design direction seeks to clarify the complexitity of the product by keeping a simple design language but at the same time blend into a runners lifestyle and involve progressive elements such as raw nature and techical data.</div>
+							</div>
+							<div data-name="moduleImage" width="3298" height="1800">assets/images/cases/setio/setio_02.png</div>
+							<div data-name="moduleText" data-width-scale="0.6" >
+								<div data-name="top">The brand signature is constructed from a monospace typography that forms an invisible rectangle. This rectangle is used to form a super graphic of multiples steps. These are the steps towards control.</div>
+							</div>
+							<div data-name="moduleImage" width="3512" height="1800">assets/images/cases/setio/setio_03.png</div>
+
+							<div data-name="moduleImage" width="3688" height="1800">assets/images/cases/setio/setio_03.gif</div>
+							<div data-name="moduleText" data-width-scale="0.6" >
+								<div data-name="top">The Setio® supergraphic interprets the invisible frame of the logotype. This frame is visualized and dublicated into multiples steps forming a supergrahic that visualizes the steps towards control. The shape of the frames adapts to the invivleble frame of the dynamic logotypes.</div>
+							</div>
+							<div data-name="moduleImage" width="3662" height="1800">assets/images/cases/setio/setio_04_01.gif</div>
+							<div data-name="moduleImage" width="2613" height="1620">assets/images/cases/setio/setio_04.jpg</div>
+							<div data-name="moduleText" data-width-scale="0.6" >
+								<div data-name="top">The Setio® photography direction explores the progressive and uncontrollable environments of nature and urban environments in which it welcomes a runner in control.</div>
+								<div data-name="bot"><a href="http://www.andreashoumann.com/" target="blank">Photographer, Andreas Houmann.</a></div>
+							</div>
+							<div data-name="moduleImage" width="2939" height="1620">assets/images/cases/setio/setio_08.jpg</div>
+							<div data-name="moduleImage" width="2201" height="1620">assets/images/cases/setio/setio_06.jpg</div>
+							<div data-name="moduleImage" width="2749" height="1620">assets/images/cases/setio/setio_07.jpg</div>
+							<div data-name="moduleText" data-width-scale="0.6" >
+								<div data-name="top">Bridging data, expert knowledge, technology and connecting runners to a global network of dedicated professionals all happens trough the Setio® App. Exploring and defining the design direction of the app was a crusial part of helping Setio® unlock the potential both from a design and business perspective.</div>
+							</div>
+							<div data-name="moduleImage" width="4326" height="1710">assets/images/cases/setio/setio_05.jpg</div>
+
+							<!-- </div> -->
+
+						</div>
+					</div>
+
+					<div data-path='doyouspeakhuman' data-template="case-0" >
+						<div data-name="info">
+							<div data-name="headline">
+								Do You Speak Human?<br>
+								Digital Experience
+							</div>
+							<div data-name="client">SPACE10</div>
+							<div data-name="project">Digital Experience</div>
+							<div data-name="year">2017</div>
+						</div>
+
+						<div data-name="overviewimage">assets/images/cases/dysh/dysh_00_overview.jpg</div>
+
+						<div data-name="home">
+							<div data-name="headline">Do You Speak Human?</div>
+
+							<div data-name="details">
+								Design Direction<br>
+								Creative Direction<br>
+								Digital Design
+							</div>
+
+							<div data-name="body">
+								One day soon, we might talk to our devices the way we talk to our friends. And the devices will talk back. This fundamentally changes our relationship with technology and opens up for some very important questions.
+							</div>
+						</div>
+
+						<div data-name="modules">
+							<div data-name="moduleImage" width="2511" height="1620">assets/images/cases/dysh/dysh_01.jpg</div>
+							<div data-name="moduleText">
+								<!--<div data-name="top"></div>-->
+								<div data-name="mid">
+									Objective<br>
+									SPACE10, IKEA’s external future living lab, wanted to learn how the many people feel about Artificial Intelligence. The idea was to launch a world-wide survey centered around the topic of democratising tomorrow’s AI.
+									<br><br>
+									Concept & Design<br>
+									The design is build around the style of the iconic IKEA assembly character and manuals using only black and white colors. Each area of the site is layered in boxes hinting suddle references computer operating systems where windoes are stacked on top of each-other. The survey is completed trough a conversational interface making the experience of participating a playful and engaging experience.</div>
+								<div data-name="bot">
+									Result<br>
+									Over 10.000 people have participated during a period of 1 month.
+ Do You Speak Human? has been featured on Co.Design, WIRED, Mashable, The Verge, CNET, The Next Web, PSFK and MSN.
+								</div>
+							</div>
+							<div data-name="moduleImage" width="2572" height="1800">assets/images/cases/dysh/dysh_02.gif</div>
+
+							<div data-name="moduleImage" width="2511" height="1489">assets/images/cases/dysh/dysh_03.jpg</div>
+							<div data-name="moduleText" data-width-scale="0.6" >
+								<div data-name="top">Do You Speak Human? has been exhibited at various conferences and festivals like Internet Age Media and Made In Space where people could enter the custom made boths and take part in democratising tomorrow’s AI.</div>
+								<div data-name="bot"><a href="http://www.doyouspeakhuman.com/" target="blank">doyouspeakhuman.com</a></div>
+							</div>
+							<div data-name="moduleImage" width="6400" height="1800">assets/images/cases/dysh/dysh_04.jpg</div>
+							<!-- </div> -->
+						</div>
+					</div>
+
+					<div data-path='mitte' data-template="case-0" >
+						<div data-name="info">
+							<div data-name="headline">
+								Mitte®<br>
+								Brand Identity
+							</div>
+							<div data-name="client">Mitte®</div>
+							<div data-name="project">Brand Identity</div>
+							<div data-name="year">2016</div>
+						</div>
+
+						<div data-name="overviewimage">assets/images/cases/mitte/mitte_00_overview.jpg</div>
+
+						<div data-name="home">
+							<div data-name="headline">Mitte®</div>
+
+							<div data-name="details">
+								Brand Strategy & Platform<br>
+								Brand Naming<br>
+								Brand Signature & Brandmark<br>
+								Typographic System<br>
+								Colorpalette<br>
+								Photography Style<br>
+								Iconography<br>
+								Illustration<br>
+								iOS App Design<br>
+								Website<br>
+							</div>
+
+							<div data-name="body">
+								Improving life with better water. The quality of water is vital for human well-being. Mitte® introduces a ground-breaking, smart, and sustainable water appliance for your home.
+							</div>
+						</div>
+
+						<div data-name="modules">
+							<div data-name="moduleImage" width="2090" height="1620">assets/images/cases/mitte/mitte_01.png</div>
+							<div data-name="moduleText">
+								<!--<div data-name="top"></div>-->
+								<div data-name="mid">
+									Objective<br>
+									Explore, develop and define a brandname, vision and design direction for a new Berlin based IOT startup on a journey to build the world’s first home water system to purify and vitalize your daily drinking water.
+									<br><br>
+									Concept<br>
+									The brandname mitte® means "middle" in german. It's a reflection of finding balance. It's also the name of the area where the brand resides.</div>
+								<div data-name="bot">
+									Design<br>
+									The design direction is defined as an approachable, natural and new classic brand tapping into a simple and functional aesthetic that caters to the lifestyle of young global citizens.</div>
+							</div>
+							<div data-name="moduleImage" width="2380" height="1620">assets/images/cases/mitte/mitte_02.png</div>
+							<div data-name="moduleText" data-width-scale="0.8" >
+								<div data-name="top">Brandmark & signature<br>
+									The brandmark serves as the icnoic element of the mitte® identity. It's a simple graphic translation of the brandname which is created by placing a solid circle in the middle of a rounded sqaure. The idea of the mark is adopted from the negative space that appers between the "i" and the "t" of the brandsiganature.
+								</div>
+
+							</div>
+							<div data-name="moduleImage" width="2062" height="1620">assets/images/cases/mitte/mitte_02_01.png</div>
+
+
+							<div data-name="moduleImage" width="4774" height="1800">assets/images/cases/mitte/mitte_04.png</div>
+
+							<div data-name="moduleText">
+								<!--<div data-name="top"></div>-->
+								<div data-name="top" data-width-scale="0.6">
+									Mitte® use a simple, modern and functional typeface making an approaclble expression across platforms, communication and products.
+									<br>
+									<br>
+									The primary colors is based on a set of monochromatic tones with a secondary set of functional colors to enhance UI elements.  The palette enables a strong basic brand and functional focus.
+								</div>
+
+							</div>
+
+							<div data-name="moduleImage" width="2934" height="1620">assets/images/cases/mitte/mitte_05.jpg</div>
+							<div data-name="moduleText" data-width-scale="0.6" >
+								<div data-name="top">As a part of the brand vision we explored the potential for an interface enabling users to gain self awareness, knowledge and hydration insights about their water consumption.</div>
+							</div>
+							<div data-name="moduleImage" width="3055" height="1620">assets/images/cases/mitte/mitte_06.jpg</div>
+							<div data-name="moduleText">
+								<!--<div data-name="top"></div>-->
+								<div data-name="top" data-width-scale="0.6">
+									The brand vision involved a phase of exploring materials and potential ways of applicating the design direction across different touchpoints such as stationery, print, hardware and packaging.
+									<br>
+
+								</div>
+
+							</div>
+							<div data-name="moduleImage" width="4784" height="1620">assets/images/cases/mitte/mitte_07.jpg</div>
+							<div data-name="moduleText" data-width-scale="0.6" >
+								<div data-name="top">To gain awareness before launching the product in 2017 we designed and developed a simple responsive platform enabling mitte® to tease the brand and product while at the same time being able to provide updates trough a simple journal and newsletter.</div>
+								<div data-name="bot"><a href="http://www.mitte.co/" target="_blank">Visit mitte.co</a></div>
+							</div>
+							<div data-name="moduleImage" width="2466" height="1620">assets/images/cases/mitte/mitte_08.jpg</div>
+
+							<div data-name="moduleImage" width="3825" height="1620">assets/images/cases/mitte/mitte_09.jpg</div>
+							<div data-name="moduleImage" width="4198" height="1620">assets/images/cases/mitte/mitte_10.jpg</div>
+						</div>
+					</div>
+
+					<div data-path='twentythree' data-template="case-0" >
+						<div data-name="info">
+							<div data-name="headline">
+								Twentythree™<br>
+								Brand Identity
+							</div>
+							<div data-name="client">Twentythree™</div>
+							<div data-name="project">Brand Identity</div>
+							<div data-name="year">2016</div>
+						</div>
+
+						<div data-name="overviewimage">assets/images/cases/twentythree/twentythree_01.gif</div>
+
+						<div data-name="home">
+							<div data-name="headline">TwentyThree™</div>
+
+							<div data-name="details">
+								Brand Signature & Brandmark<br>
+								Creative & Art Direction<br>
+								Typographic System<br>
+								Colorpalette<br>
+								Photography Style<br>
+								Iconography<br>
+								Illustration<br>
+								Data Visualization<br>
+								Brandmark animation<br>
+								Keynote<br>
+							</div>
+
+							<div data-name="body">
+								TwentyThree™ is a tech company focused on making great tools for visual sharing on the web. Founded by Thomas Madsen-Mygdal and Steffen Christensen, TwentyThree has offices in San Francisco and Copenhagen.
+							</div>
+						</div>
+
+						<div data-name="modules">
+							<div data-name="moduleImage" width="2232" height="1440">assets/images/cases/twentythree/twentythree_01.gif</div>
+							<div data-name="moduleText">
+								<!--<div data-name="top"></div>-->
+								<div data-name="mid">
+									Objective<br>
+									Analyze, reflect and explore the opportunities of redesigning the TwentyThree™ brand architecture and visual design. The key objetive is to simplify and tighten the brand across all touch points before launching TwentyThree™ globally.
+									<br><br>
+									Concept<br>
+									The concept of the visual identity is build around the idea of a canvas. A canvas being a frame to facilitate content. The canvas resembles the purpose of the company which is to facilitate visual sharing.
+								</div>
+								<div data-name="bot">
+									Design<br>
+									Focusing on the concept of the canvas we wanted to create a design system that provided TwentyThree™ with simple tools. We developed a design system inspired by common wayfinding principles. These principles acts as guideance troughout the visual language of typography, colors, iconograpy and grid systems.</div>
+							</div>
+							<div data-name="moduleImage" width="1389" height="1440">assets/images/cases/twentythree/twentythree_02.png</div>
+							<div data-name="moduleText" data-width-scale="0.6">
+								<div data-name="top">
+									The brandmark is created based on the idea of a canvas. A canvas being a frame to facilitate content. The canvas resembles the purpose of the company which is to facilitate visual sharing.
+									Technically the TwentyThree™ brandmark using is build using the 16:9 ratio.
+
+								</div>
+							</div>
+							<div data-name="moduleImage" width="2714" height="1440">assets/images/cases/twentythree/twentythree_03.png</div>
+
+
+							<div data-name="moduleImage" width="1741" height="1440">assets/images/cases/twentythree/twentythree_03_01.png</div>
+							<div data-name="moduleText" data-width-scale="0.7">
+								<div data-name="top">
+									The primary colors consists of a "Spring" and "Racing" green. These two colors symbolize the balance between innovation and stability.<br><br>
+
+									TwentyThree™ uses the typeface—NB Inter-national™. Designed by Stefan Gandl. Published by Neubau in 2008. NB International™ pays tribute to popular Grotesk typefaces of the ‘international style’ era.
+								</div>
+							</div>
+							<div data-name="moduleImage" width="3348" height="1440">assets/images/cases/twentythree/twentythree_04.png</div>
+
+							<div data-name="moduleImage" width="3786" height="1440">assets/images/cases/twentythree/twentythree_05.png</div>
+							<div data-name="moduleImage" width="1205" height="1440">assets/images/cases/twentythree/twentythree_06.jpg</div>
+							<div data-name="moduleText" data-width-scale="0.6" >
+								<div data-name="top">The brand vision involved a phase of exploring materials and potential ways of applicating the design direction across different touchpoints such as stationery, print, hardware and digital.
+								</div>
+							</div>
+							<div data-name="moduleImage" width="1350" height="1440">assets/images/cases/twentythree/twentythree_07.jpg</div>
+							<div data-name="moduleImage" width="4192" height="1440">assets/images/cases/twentythree/twentythree_08.jpg</div>
+							<div data-name="moduleImage" width="864" height="1080">assets/images/cases/twentythree/twentythree_09.jpg</div>
+							<div data-name="moduleText" data-width-scale="0.6" >
+								<div data-name="top">
+									Defining and designing a core set of rules and modules for TwentyThree™ to start building their new digital presence.
+								</div>
+							</div>
+							<div data-name="moduleImage" width="2629" height="1440">assets/images/cases/twentythree/twentythree_10.jpg</div>
+							<div data-name="moduleImage" width="2202" height="1440">assets/images/cases/twentythree/twentythree_11.jpg</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-89618115-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+		<!-- Initialize site -->
+		<script>
+			window.onload = function() {
+				document.body.style.margin = 0;
+				document.body.style.padding = 0;
+				document.body.style.color = "#1c1c1c";
+				document.body.style.fontSize = "17px";
+				document.body.style.fontStyle = "normal";
+				document.body.style.overflowX = "hidden";
+				document.body.style.width = "100%";
+				document.body.style.height = "100%";
+
+				var main = new Main();
+				document.body.appendChild(main);
+				main.init();
+			};
+		</script>
+	</body>
+</html>
